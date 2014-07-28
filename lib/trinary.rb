@@ -1,5 +1,5 @@
-def binary(input_binary)
-  binary_array = input_binary.split("")
+def trinary(input_trinary)
+  trinary_array = input_trinary.split("")
   conversion = { 0 => 729,
                  1 => 243,
                  2 => 81,
@@ -12,8 +12,8 @@ def binary(input_binary)
   count = 0
   result = 0
 
-  binary_array.each do |binary|
-    if binary.to_i == 1
+  trinary_array.each do |trinary|
+    if trinary.to_i == 1
       result += conversion[count]
     end
     count += 1
@@ -22,4 +22,4 @@ def binary(input_binary)
   # puts result
 end
 
-puts binary("10001100")
+puts trinary("1101100")
